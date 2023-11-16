@@ -16,23 +16,23 @@ interface ImageWithPrompt {
 const images: ImageWithPrompt[] = [
     {
         src: "/images/freedom.png",
-        prompt: "Minimalist tatto that signifies freedom",
+        prompt: "Minimalist and signifies freedom",
     },
     {
         src: "/images/freedom.png",
-        prompt: "Minimalist tatto that signifies freedom",
+        prompt: "Minimalist and signifies freedom",
     },
     {
         src: "/images/freedom.png",
-        prompt: "Minimalist tatto that signifies freedom",
+        prompt: "Minimalist and signifies freedom",
     },
     {
         src: "/images/freedom.png",
-        prompt: "Minimalist tatto that signifies freedom",
+        prompt: "Minimalist and signifies freedom",
     },
     {
         src: "/images/freedom.png",
-        prompt: "Minimalist tatto that signifies freedom",
+        prompt: "Minimalist and signifies freedom",
     }
 ]
 

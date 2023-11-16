@@ -5,18 +5,20 @@ import ImageGrid from '@/components/ImageGrid';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 text-white">
-      <p> Ink Vision </p>
-      <div className="flex flex-row items-end justify-between w-full max-w-md">
-        <Input
-          placeholder="Write your text here"
-          className="flex-grow p-2 rounded-md"
-        />
-        <Button>
-          <MdSend />
-        </Button>
+    <main>
+      <p className="text-3xl p-8">Ink Vision</p>
+      <div className="flex min-h-screen flex-col items-center p-24 text-white">
+        <div className="flex flex-row items-end justify-between w-full max-w-md mb-8">
+          <Input
+            placeholder="Describe your tattoo"
+            className="flex-grow p-2 rounded-md"
+          />
+          <Button>
+            <MdSend />
+          </Button>
+        </div>
+        <ImageGrid />
       </div>
-      <ImageGrid />
     </main>
   );
 }
