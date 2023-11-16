@@ -1,6 +1,7 @@
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { MdSend } from 'react-icons/md'
+import ImageGrid from '@/components/ImageGrid';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <MdSend />
         </Button>
       </div>
+      <ImageGrid />
     </main>
   );
 }
