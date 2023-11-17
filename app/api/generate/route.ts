@@ -13,7 +13,7 @@ const ratelimit = new Ratelimit({
     limiter: Ratelimit.slidingWindow(5, '60 s'), // Limit to 5 requests per 60 seconds
 });
 
-const defaultPrompt = `Create a tattoo signifying freedom and independence, located on the upper arm. The tattoo should be black and white.`;
+const defaultPrompt = `Create a tattoo that follows the following Specification. The tattoo should be black and white. Specification: `;
 
 export async function POST(req: Request) {
     const ip = req.headers.get('x-forwarded-for');
@@ -31,9 +31,12 @@ export async function POST(req: Request) {
         });
     }
 
+    const body = await req.json();
+    const prompt = defaultPrompt + body.prompt;
+
     const image = await openai.images.generate({
         model: "dall-e-3",
-        prompt: defaultPrompt,
+        prompt: prompt,
         n: 1,
         size: "1024x1024",
     });
