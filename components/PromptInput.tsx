@@ -4,9 +4,11 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { MdSend } from 'react-icons/md'
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const PromptInput = () => {
     const [inputValue, setInputValue] = useState('');
+    const router = useRouter();
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -23,7 +25,8 @@ const PromptInput = () => {
             }
             // Assuming you want to do something with the response:
             const data = await response.json();
-            console.log(data);
+
+            router.push(`/creation?image=${encodeURIComponent(data[0].url)}`);
         } catch (error) {
             console.error('Failed to submit prompt', error);
         }

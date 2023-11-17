@@ -24,6 +24,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <p className="text-3xl p-8">Ink Vision</p>
+          <p className="text-l ml-8">Coming soon...</p>
           {children}
         </ThemeProvider>
       </body>
