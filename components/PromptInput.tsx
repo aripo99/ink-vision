@@ -26,7 +26,7 @@ const PromptInput = () => {
             // Assuming you want to do something with the response:
             const data = await response.json();
 
-            router.push(`/creation?image=${encodeURIComponent(data[0].url)}`);
+            router.push(`/creation?image=${encodeURIComponent(data[0].url)}&prompt=${encodeURIComponent(inputValue)}`);
         } catch (error) {
             console.error('Failed to submit prompt', error);
         }

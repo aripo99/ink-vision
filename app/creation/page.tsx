@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Page() {
     const searchParams = useSearchParams();
     const imageUrl = searchParams.get('image');
-    const prompt = "A prompt should go here";
+    const prompt = searchParams.get('prompt');
 
     if (!imageUrl) {
         // Handle the case when image URL is not provided
