@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +25,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <p className="text-3xl p-8">Ink Vision</p>
+          <Link href="/">
+            <p className="text-3xl p-8">Ink Vision</p>
+          </Link>
           <p className="text-l ml-8">Coming soon...</p>
           {children}
         </ThemeProvider>
