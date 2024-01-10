@@ -28,7 +28,6 @@ export default function RootLayout({
           <Link href="/">
             <p className="text-3xl p-8">Ink Vision</p>
           </Link>
-          <p className="text-l ml-8">Coming soon...</p>
           {children}
         </ThemeProvider>
       </body>

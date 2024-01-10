@@ -19,20 +19,24 @@ const images: ImageWithPrompt[] = [
         prompt: "Minimalist and signifies freedom",
     },
     {
-        src: "/images/freedom.png",
-        prompt: "Minimalist and signifies freedom",
+        src: "/images/butterfly.png",
+        prompt: "A small minimalist butterfly in the shoulder",
     },
     {
-        src: "/images/freedom.png",
-        prompt: "Minimalist and signifies freedom",
+        src: "/images/snake.png",
+        prompt: "Snake in an artistic way showcasing its texture in the back",
     },
     {
-        src: "/images/freedom.png",
-        prompt: "Minimalist and signifies freedom",
+        src: "/images/world.png",
+        prompt: "A minimalist world with a brain",
     },
     {
-        src: "/images/freedom.png",
-        prompt: "Minimalist and signifies freedom",
+        src: "/images/mountain.png",
+        prompt: "A minimalist, yet powerful tattoo of a mountain. It should convey a sense of enduring strength and stability",
+    },
+    {
+        src: "/images/yingyang.png",
+        prompt: "Yin and Yang symbol, perfectly balanced, with a modern artistic twist to represent harmony and balance in life"
     }
 ]
 
